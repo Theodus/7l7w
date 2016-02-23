@@ -5,5 +5,5 @@
 #### Ruby
 - Programmer's intent is clearly visible
 - Terse to a fault
-- Languages should be build upon rather than changed (open classes)
+- Open classes give too much power over the core language
 - Object oriented design becomes over-complicated quickly
