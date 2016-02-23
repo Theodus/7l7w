@@ -1,4 +1,5 @@
-# Print the string “This is sentence number 1,” where the number 1 changes from 1 to 10.
+# Print the string “This is sentence number 1,” where the number 1 changes
+# from 1 to 10.
 
 i = 1
 while i <= 10
