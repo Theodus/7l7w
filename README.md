@@ -4,4 +4,4 @@
 
 #### Ruby
 - Terse to a fault
-- Too much nesting
+- end keyword to end blocks are ugly in my opinion
