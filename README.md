@@ -7,3 +7,8 @@
 - Terse to a fault
 - Open classes give too much power over the core language
 - Object oriented design becomes over-complicated quickly
+
+#### Io
+- Simple and elegant signals
+- Very simple syntax
+- Ability to break the core language
