@@ -15,7 +15,7 @@
 - Type inference
 - Error type
 - Multiple assignment/return types
-- Golang interface implementation (somewhat like ducktyping)
+- Golang-like interface implementation (somewhat like ducktyping)
 
 ### Types
 - int (infinite precision)
