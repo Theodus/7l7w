@@ -54,3 +54,5 @@ a2 = append(a1, 4) // => [1, 2, 3, 4]
 
 ### TODO
 - Concurrency model
+- Interfaces
+- IO and errors
