@@ -23,27 +23,27 @@
 - string ([]rune)
 - rune (utf-8 rune)
 - func (args) -> (rets)
-- list [1, 2, 3]
-- map {a: "a", b: "b", c: 3}
+- array [1, 2, 3]
+- map {1: "a", 2: "b", 3: "c"}
 
 ### Examples
 ```
 main = () -> ():
-    println("Hello JACL!")
+    println("Hello, JACL!")
 ```
 ```
 fac = (n int) -> (int):
     if n < 2:
         return 1
     return n * fac(n - 1)
-```
-```
-plus = (a int, b int) -> (int):
-    return a + b
-```
-```
-vals = () -> (int, int):
-    return 3, 7
+
 main = () -> ():
-    println(vals())
+    println(fac(7))
+```
+```
+m1 = merge({"two": 2}, {"one": 1, "three": 3}) // => {"one": 1, "three": 3, "two": 2}
+x = get(m1, "two") // => 2
+
+a1 = [1, 2, 3]
+a2 = append(a1, 4) // => [1, 2, 3, 4]
 ```
