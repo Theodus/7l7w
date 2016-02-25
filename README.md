@@ -31,4 +31,5 @@
 - Unnecessarily inconvenient syntax
 
 #### Clojure
--
+- The simplicity is nice
+- LISP syntax is a bit annoying
