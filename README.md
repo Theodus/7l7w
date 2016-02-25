@@ -28,3 +28,7 @@
 - Lightweight processes with actor model
 - On-the-fly code replacement
 - The "Let it crash" mentality removes the need for a large portion of error handling
+- Unnecessarily inconvenient syntax
+
+#### Clojure
+-
