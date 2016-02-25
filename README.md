@@ -13,3 +13,18 @@
 - Very simple syntax
 - Redefinition of core language is powerful for DSL implementation
 - Futures are easy to use and provide automatic deadlock detection
+
+#### Prolog
+- Great for specific use cases that require logic
+- Very limited
+
+#### Scala
+- Interesting mix between paradigms
+- Pattern matching is well done
+- Difficult to reason about code with the mixed paradigms
+
+#### Erlang
+- Very reliable
+- Lightweight processes with actor model
+- On-the-fly code replacement
+- The "Let it crash" mentality removes the need for a large portion of error handling
