@@ -1,12 +1,20 @@
-// https://www.haskell.org/onlinereport/haskell2010/haskellch2.html#x7-150002.1
+// JAKAL Language Definition
 
-prog : stat* EOF ;
+prog : package imports? stat* EOF ;
+
+package : Package ID NL ;
+
+imports : Import OpenParen str* CloseParen NL ;
 
 stat : assign NL
-     | 
+     | funcCall NL
      ;
 
 assign : ID EQ expr ;
+
+funcCall : ID args ;
+
+args : OpenParen (ID ID (Comma ID ID)*)? CloseParen ;
 
 val : num
     | ID
@@ -33,13 +41,12 @@ array : OpenBracket (val (Comma val)*)? CloseBracket ;
 // {val: val, val: val}
 map : OpenBrace (val Colon val (Comma val Colon val)*)? CloseBrace ;
 // (id typ, id typ) -> (typ, typ): body
-func : OpenParen (ID ID (Comma ID ID)*)? CloseParen RightArrow
-       OpenParen (ID (Comma ID)*)? CloseParen Colon body ;
+func : args RightArrow OpenParen (ID (Comma ID)*)? CloseParen Colon body ;
 
 TRUE : "true" ;
 False : "false" ;
 
-ID : any utf-8 letter followed by zero or more alphanumerics
+ID : any utf-8 letter followed by zero or more alphanumerics | Underscore
 OpenParen : "(" ;
 CloseParen : ")" ;
 Comma : "," :
@@ -49,3 +56,10 @@ OpenBracket : "[" ;
 CloseBracket : "]" ;
 OpenBrace : "{" ;
 CloseBrace : "}" ;
+Package : "package" ;
+Import : "import" ;
+Underscore : "_" ;
+
+LineComment : ignore everything after // until newline ;
+OpenComment : "/*" ;
+CloseComment : "*/" ;
