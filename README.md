@@ -33,3 +33,6 @@
 #### Clojure
 - The simplicity is nice
 - LISP syntax is a bit annoying
+
+#### Haskell
+- Easy to look at, hard to understand
